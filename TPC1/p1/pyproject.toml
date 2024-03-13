@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "word_freq"
+version = "0.1.0"  # Specify your package version here
+authors = [{name = "Bernardo Costa", email = "pg53699@alunos.uminhO.pt"}]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.9"
+dynamic = ["description"]  # Removed "version" from the dynamic list
+dependencies = [
+    "jjcli"
+]
+[project.scripts]
+wfreq = "word_freq:main"
